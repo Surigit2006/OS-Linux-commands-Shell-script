@@ -149,11 +149,15 @@ cat newfile | grep -i -c "hello"
 
 grep -R ubuntu /etc
 ## OUTPUT
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/6b59ca71-d701-43a4-aeb7-74b83534690f" />
+
 
 
 
 grep -w -n world newfile   
 ## OUTPUT
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/a15ba7df-ed4a-4f69-9858-95b6714f650a" />
+
 
 
 cat < newfile 

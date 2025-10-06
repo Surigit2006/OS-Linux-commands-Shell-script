@@ -433,13 +433,16 @@ tar -xvf backup.tar
 ## OUTPUT
 <img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/f7a72cf4-32d6-402f-acb8-7f65266b4eea" />
 
-gzip backup.tar
+gzip backupdir
+
 
 ls .gz
 ## OUTPUT
- 
+ <img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/59d0be3e-2e67-4fea-9068-b0ef6f8fb1bd" />
+
 gunzip backup.tar.gz
 ## OUTPUT
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/0b55a097-d60c-48c2-8177-e6caf311f4b6" />
 
  
 # Shell Script
@@ -450,6 +453,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/f1c94ec4-07dc-4d22-9edd-76ddb0ec6819" />
 
  
 cat << stop > herecheck.txt
@@ -462,9 +466,10 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/430d85a5-a6a1-4534-ba5a-8a76990a7777" />
 
 
-cat < scriptest.sh 
+cat > scriptest.sh 
 ```bash
 \#!/bin/sh
 echo “File name is $0 ”
@@ -500,29 +505,36 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/ff76c8a7-38de-4eda-b42d-c843d3b6269b" />
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/183a7d0c-9ca6-4537-8035-127b0c7aa68f" />
 
  
 ls file1
 ## OUTPUT
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/8ecde2d0-05ba-48a8-b196-dcaf875ceca5" />
 
 echo $?
 ## OUTPUT 
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/1bb602c1-8973-4f3c-9c88-84722662231b" />
+
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+ <img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/f867aa19-472a-4bd2-a4d6-78a6603fe711" />
+
 abcd
  
 echo $?
  ## OUTPUT
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/347536e0-fbd3-4d60-9361-784444e9486f" />
 
 
  
 # mis-using string comparisons
 
-cat < strcomp.sh 
+cat > strcomp.sh 
 ```bash
 \#!/bin/bash
 val1=baseball
@@ -549,6 +561,7 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/a9e85c21-c2e1-48a9-aad7-1482d750de76" />
 
 
 
@@ -556,10 +569,11 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/cb11b4cc-6248-4b2a-9a05-e0879f00553d" />
 
 
 # check file ownership
-cat < psswdperm.sh 
+cat > psswdperm.sh 
 ```bash
 \#!/bin/bash
 if [ -O /etc/passwd ]
